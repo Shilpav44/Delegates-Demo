@@ -1,0 +1,8 @@
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\bin\Debug\Delegates.exe.config
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\bin\Debug\Delegates.exe
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\bin\Debug\Delegates.pdb
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\bin\Debug\DemoLibrary.dll
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\bin\Debug\DemoLibrary.pdb
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\obj\Debug\Delegates.csprojResolveAssemblyReference.cache
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\obj\Debug\Delegates.exe
+c:\users\shilpa\documents\visual studio 2015\Projects\Delegates\Delegates\obj\Debug\Delegates.pdb
