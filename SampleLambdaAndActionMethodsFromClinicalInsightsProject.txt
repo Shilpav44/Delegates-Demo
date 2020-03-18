@@ -1,0 +1,49 @@
+hqriApiResponse.ClinicalAndHccResponse?.ClinicalInferences?.ForEach(ci => fhirBundleRequest.Entry.Add(new Bundle.EntryComponent
+
+            {
+
+                Resource = ci
+
+            }));
+
+ 
+
+            hqriApiResponse.ClinicalAndHccResponse?.Hcc?.ForEach(ci => fhirBundleRequest.Entry.Add(new Bundle.EntryComponent
+
+            {
+
+                Resource = ci
+
+            }));
+
+The ForEach(ci => fhirBundleRequest.Entry.Add(new Bundle.EntryComponent portion is the sample or example for delegate in the form of action
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+if (fhirPractitionerRequestObject?.Specialty != null && fhirPractitionerRequestObject.Specialty?.Count>0)
+
+            {
+
+                foreach (CodeableConcept code in fhirPractitionerRequestObject?.Specialty)
+
+                {
+
+                    specialityCodes.AddRange(code?.Coding?.Where(x => x?.System == GetConfigKeyValue(ClinicalInsightConstants.EpicNuccCodePath)).Select(x => x?.Code).ToList());
+
+                    specialityCodes = specialityCodes.Where(x => x != null).ToList();
+
+                }
+
+            }
+
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  public static string ExtractMemberIdFromFhirPatient(Patient patient, MemberIdPathConfigResponse memberIDPathConfigResponse)
+
+        {
+
+             var memberId = patient?.Identifier?.Find(x=>x?.Type?.Text != null && x.Type.Text.Equals(memberIDPathConfigResponse?.MemberIdPathConfigValue, StringComparison.CurrentCultureIgnoreCase))?.Value;
+
+            return memberId;
+
+        }
+
